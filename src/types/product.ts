@@ -5,3 +5,11 @@ export type Product = {
   price: number;
   liked: boolean;
 };
+export type ProductComplete = {
+  id: number;
+  label: string;
+  images: string[];
+  price: number;
+  liked: boolean;
+  description: string;
+};

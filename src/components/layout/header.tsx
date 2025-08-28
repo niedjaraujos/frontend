@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { HeaderIcon } from './header-icon';
-import Link from 'next/link';
-import { useState } from 'react';
-import { HeaderSearch } from './header-search';
-import { MenuItem } from '@/types/menu-item';
+import Image from "next/image";
+import { HeaderIcon } from "./header-icon";
+import Link from "next/link";
+import { useState } from "react";
+import { HeaderSearch } from "./header-search";
+import { MenuItem } from "@/types/menu-item";
 
 export default function Header() {
   const menu: MenuItem[] = [
-    { label: 'Camisetas', href: '/' },
-    { label: 'Kits', href: '/' },
+    { label: "Camisas", href: "/categories/camisas" },
+    { label: "Kits", href: "/categories/kits" },
   ];
   const [menuOpened, setMenuOpened] = useState(false);
   {
@@ -25,7 +25,7 @@ export default function Header() {
       <div className="w-full max-w-6xl mx-auto p-6">
         <div className="flex items-center justify-between">
           <div className="w-32">
-            <Link href={'/'}>
+            <Link href={"/"}>
               <Image
                 src="/assets/ui/logo-black.png"
                 alt="B7Store"
@@ -53,10 +53,10 @@ export default function Header() {
             </div>
           </div>
           <div className="flex gap-4">
-            <Link href={'/my-orders'}>
+            <Link href={"/my-orders"}>
               <HeaderIcon src="/assets/ui/user-line.png" alt="Perfil" />
             </Link>
-            <Link href={'/cart'}>
+            <Link href={"/cart"}>
               <HeaderIcon
                 src="/assets/ui/shopping-bag-4-line.png"
                 alt="Carrinho"
@@ -89,7 +89,7 @@ export default function Header() {
                 </div>
                 <div>
                   <Image
-                    src={'/assets/ui/arrow-up-right.png'}
+                    src={"/assets/ui/arrow-up-right.png"}
                     alt="Ir a categoria"
                     width={24}
                     height={24}

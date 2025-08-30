@@ -44,6 +44,7 @@ export const data = {
     ],
     price: 19.9,
     liked: false,
-    description: 'frase do produto',
+    description:
+      'Mussum Ipsum, cacilds vidis litro abertis.  Negão é teu passadis, eu sou faxa pretis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.',
   },
 };
